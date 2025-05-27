@@ -37,11 +37,11 @@
 4. **Hive Table Creation**
    - Dropped any previous Hive tables.
    - Created **EXTERNAL** Hive tables pointing at each directory, matching the cleaned schema:
-     - `mimic3_admissions` (subject_id, hospital_admission_id, admittime, dischtime, length_of_stay, admission_type, …)  
-     - `mimic3_patients` (subject_id, dob, dod, gender, expire_flag)  
-     - `mimic3_icustays` (subject_id, hadm_id, icustay_id, intime, outtime, icu_length_of_stay, …)  
-     - `mimic3_labevents` (subject_id, hadm_id, itemid, charttime, valuenum, valueuom)  
-     - `mimic3_diagnoses_icd` (subject_id, hadm_id, seq_num, diagnosis_code)  
+     - `admissions` (subject_id, hospital_admission_id, admittime, dischtime, length_of_stay, admission_type, …)  
+     - `patients` (subject_id, dob, dod, gender, expire_flag)  
+     - `icustays` (subject_id, hadm_id, icustay_id, intime, outtime, icu_length_of_stay, …)  
+     - `labevents` (subject_id, hadm_id, itemid, charttime, valuenum, valueuom)  
+     - `diagnoses_icd` (subject_id, hadm_id, seq_num, diagnosis_code)  
    - Verified that each table shows non-zero row counts in Hive.
 
 ---
